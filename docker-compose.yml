@@ -1,0 +1,7 @@
+services:
+  my-python:
+    container_name: my-python
+    image: my-personal-python:dev
+    volumes:
+      - ./code:/app
+    command: ["python /app/main.py"]
